@@ -1,0 +1,287 @@
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Pacifico&family=Protest+Strike&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Pacifico&family=Protest+Strike&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <title>My E-Portofolio</title>
+    <style>
+
+
+    </style>
+</head>
+<body>
+   <!-- dark/light mode -->
+  <input name="page-theme" type="radio" id="radio-button" class="light-radio-button" checked="checked">
+  <input name="page-theme" type="radio" id="radio-button2" class="dark-radio-button">
+  <main>
+  
+  <!--positioning my navbar using bootstrap -->
+    <div class="py-3 position-fixed d-flex align-items-center" id="light-dark-modes">
+      <label class="mode-label" for="radio-button"><i class="bi bi-sun"></i></label>
+      <label class="mode-label" for="radio-button2"><i class="bi bi-moon-stars"></i></label>
+    </div>
+    <nav class="navbar navbar-expand-sm fixed-top " id="navigation">
+      <div class="container-fluid">
+        
+        <a class="navbar-brand px-5" href="#">Shayan Abdmoakhar</a>
+        <button id="burger" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-main" aria-controls="navbar-main" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon pt-2"><i class="bi bi-list"></i></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbar-main">
+          <ul class="navbar-nav text-center">
+            <li class="nav-item"><a class="nav-link" href="#hero">Home</a></li>
+            <li class="nav-item"><a class="nav-link " href="#resume">Resume</a></li>
+            <li class="nav-item"><a class="nav-link " href="#portfolio">Portfolio </a></li>
+            <li class="nav-item"><a class="nav-link " href="#contact">Contact </a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  
+      <!--About section-->
+      <!--adding a video to the hero/welcome section-->
+        <section id="hero" class="overflow-hidden">
+            <div class="intro-cont container row text mx-auto p-2">
+              
+              <div class="col-12 col-md-6 mb-3 d-flex justify-content-center">
+                <div class="card" style="width: 18rem;">
+                  <div class="border-stuff">
+                    <div class="spinner-wrapper">
+                      <span class="spin"></span>
+                      <div id="myPhoto">
+                        <img src="./images/pro-img.jpeg" alt="" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+            
+              <div class="col-6">
+                <h2>Hi 👋!</h2>
+                <h2 class="text-shadow-light fw-bold">I'm Shayan <br>Abdmoakhar</h2>
+              <p>I'm an aspired full-stack developer</p>
+              <p>Currently, I am honing my skills through hands-on projects, focusing on technologies like JavaScript, Java, MySQL, and frameworks like React and Node.js. I believe in continuous learning and am always exploring new technologies to stay up-to-date in this fast-evolving field.</p>
+              <a class="pe-2 d-inline" href="https://www.linkedin.com/in/shayan-abdmoakhar1"><img src="./images/linkedin.svg" alt="" height="64px" width="64px"></a>
+              <a class="d-inline" href="https://github.com/Shayanabdmoakhar"><img src="./images/github-desktop.svg" alt=""></a>
+              <a href="#contact" class="connect-btn">Connect With Me</a>
+              <div class="resume-download text-center mb-2 ">
+                <a href="./CGIResume.docx" class="btn my-2 mx-2 res-shake" download target="_blank">Download Resume</a>
+              </div>
+              </div>
+            </div>
+        </section> <!--End of hero section-->
+      <section id="resume">
+        <h2 class="mb-5">Skills Progress Bar</h2>
+        <p>HTML/CSS <img src="./images/css.jpg" height="20px" width="20px" alt=""> <img src="./images/html5.png" alt="" width="20px" height="20px"></p>
+        <div class="d-flex" id="bars">
+          <div class="bar-outer-box border border-1 rounded mb-2">
+            <div class="d-flex bar-rank"><p>1</p><p>2</p><p>3</p><p>4</p><p>4</p><p>5</p><p>6</p><p>7</p><p>8</p><p>9</p><p>10</p></div>
+            <div class=" bar0  bar-color rounded-end ">
+              <span class="touch">Touch Here</span>
+            </div>
+          </div>
+          <p>Data-Base<i class="bi bi-database"></i></p>
+          <div class="bar-outer-box border border-1 rounded mb-2">
+            <div class="d-flex bar-rank"><p>1</p><p>2</p><p>3</p><p>4</p><p>4</p><p>5</p><p>6</p><p>7</p><p>8</p><p>9</p><p>10</p></div>
+            <div class=" bar1 bar-color rounded-end">
+              <span class="touch">Touch Here</span>
+            </div>
+          </div>
+          <p>Bootstrap <img src="./images/bootstrap.png" alt="" height="20px" width="20px"></p>
+          <div class="bar-outer-box border border-1 rounded mb-2">
+            <div class="d-flex bar-rank"><p>1</p><p>2</p><p>3</p><p>4</p><p>4</p><p>5</p><p>6</p><p>7</p><p>8</p><p>9</p><p>10</p></div>
+            <div class=" bar2 bar-color rounded-end">
+              <span class="touch">Touch Here</span>
+            </div>
+          </div>
+          <p>Java <img src="./images/java.png" alt="" height="20px" width="20px"></p>
+          <div class="bar-outer-box border border-1 rounded mb-2">
+            <div class="d-flex bar-rank"><p>1</p><p>2</p><p>3</p><p>4</p><p>4</p><p>5</p><p>6</p><p>7</p><p>8</p><p>9</p><p>10</p></div>
+            <div class=" bar3 bar-color rounded-end">
+              <span class="touch">Touch Here</span>
+            </div>
+          </div>
+          <p>Python <img src="./images/python.png" alt="" height="20px" width="20px"></p>
+          <div class="bar-outer-box border border-1 rounded mb-2">
+            <div class="d-flex bar-rank"><p>1</p><p>2</p><p>3</p><p>4</p><p>4</p><p>5</p><p>6</p><p>7</p><p>8</p><p>9</p><p>10</p></div>
+            <div class=" bar4 bar-color rounded-end">
+              <span class="touch">Touch Here</span>
+            </div>
+          </div>
+          <p>JavaScript <img src="./images/javascript-on-fire.gif" alt="" height="20px" width="20px"></p>
+          <div class="bar-outer-box border border-1 rounded mb-2">
+            <div class="d-flex bar-rank"><p>1</p><p>2</p><p>3</p><p>4</p><p>4</p><p>5</p><p>6</p><p>7</p><p>8</p><p>9</p><p>10</p></div>
+            <div class=" bar5 bar-color rounded-end">
+              <span class="touch">Touch Here</span>
+            </div>
+          </div>
+          <p>JQuery <img src="./images/jquery-plain-wordmark.svg" alt="" height="20px" width="20px"></p>
+          <div class="bar-outer-box border border-1 rounded mb-2">
+            <div class="d-flex bar-rank"><p>1</p><p>2</p><p>3</p><p>4</p><p>4</p><p>5</p><p>6</p><p>7</p><p>8</p><p>9</p><p>10</p></div>
+            <div class=" bar6 bar-color rounded-end">
+              <span class="touch">Touch Here</span>
+            </div>
+          </div>
+          <p>System Administration <i class="bi bi-shield"></i></p>
+          <div class="bar-outer-box border border-1 rounded mb-2">
+            <div class="d-flex bar-rank"><p>1</p><p>2</p><p>3</p><p>4</p><p>4</p><p>5</p><p>6</p><p>7</p><p>8</p><p>9</p><p>10</p></div>
+            <div class=" bar7 bar-color rounded-end">
+              <span class="touch">Touch Here</span>
+            </div>
+          </div>
+        </div>
+      </section> <!--End of resume section-->
+      <hr>
+      <!--Portfolio section-->
+      <section id="portfolio">
+        <div class="container">
+            <h2 class="ps-3">Portfolio</h2>
+          <div class="row my-2" data-masonry='{"percentPosition": true }'>
+            <div class="col-lg-4 col-md-6 p-2">
+              <div class="card">
+                <a href=" https://sabdmoakhar.github.io/sailingCompany/"  target="_blank"><img src="./images/leaflet.png" class="card-img-top" alt="Bakery Project"></a>
+                <div class="card-body">
+                  <p><img src="./images/css.jpg" height="20px" width="20px" alt=""> <img src="./images/html5.png" alt="" width="20px" height="20px"><img src="./images/javascript-on-fire.gif" alt="" height="20px" width="20px"><img src="./images/bootstrap.png" alt="" height="20px" width="20px"><img src="./images/jquery-plain-wordmark.svg" alt="" height="20px" width="20px"></p>
+                  <p class="card-text">A booking sailing web page where user can book a boat and add to shopping cart from different ports and verify the order</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 p-2">
+              <div class="card">
+                <a href="https://sabdmoakhar.github.io/bakeryMultiPage/"  target="_blank"><img src="./images/bakery-project.png" class="card-img-top" alt="Bakery Project"></a>
+                <div class="card-body">
+                  <p><img src="./images/css.jpg" height="20px" width="20px" alt=""> <img src="./images/html5.png" alt="" width="20px" height="20px"></p>
+                  <p class="card-text">This is a bakery shop project is a multiple responive web page (6 pages) that only uses HTML and CSS.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 p-2">
+              <div class="card">
+                <a href="https://sabdmoakhar.github.io/banking-advisors/"  target="_blank"><img src="./images/banking-project.png" class="card-img-top" alt="Banking Project"></a>
+                <div class="card-body">
+                  <p><img src="./images/css.jpg" height="20px" width="20px" alt=""> <img src="./images/html5.png" alt="" width="20px" height="20px"> <img src="./images/bootstrap.png" alt="" height="20px" width="20px"></p>
+                  <p class="card-text">This project is showing banking staff whom appointments can be booked with using primarily bootstrap cards.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 p-2">
+              <div class="card">
+                <a href="https://sabdmoakhar.github.io/bootstrap/"  target="_blank"><img src="./images/bootstrap-bakery.png" class="card-img-top" alt="Bakery Project"></a>
+                <div class="card-body">
+                  <p><img src="./images/bootstrap.png" alt="" height="20px" width="20px"></p>
+                  <p class="card-text">This is a sibmple project where I used Bootstrap to creat a bakery shop with responsive navigation bar and fo  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 p-2">
+              <div class="card">
+                <a href="https://sabdmoakhar.github.io/hotelCartagena/"  target="_blank"><img src="./images/hotel.png" class="card-img-top" alt="Hotel Project"></a>
+                <div class="card-body">
+                  <p><img src="./images/css.jpg" height="20px" width="20px" alt=""> <img src="./images/html5.png" alt="" width="20px" height="20px"><img src="./images/javascript-on-fire.gif" alt="" height="20px" width="20px"><img src="./images/bootstrap.png" alt="" height="20px" width="20px"><img src="./images/jquery-plain-wordmark.svg" alt="" height="20px" width="20px"></p>
+                  <p class="card-text">A hotel project where users can log in and have their information displayed in a card, API call to get recent weather forcast</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 p-2">
+              <div class="card">
+                <a href="https://sabdmoakhar.github.io/myLogIn/"  target="_blank"> <img src="./images/login.png" alt="" class="card-img-top"></a>
+                <div class="card-body">
+                  <p><img src="./images/css.jpg" height="20px" width="20px" alt=""> <img src="./images/html5.png" alt="" width="20px" height="20px"><img src="./images/javascript-on-fire.gif" alt="" height="20px" width="20px"><img src="./images/bootstrap.png" alt="" height="20px" width="20px"></p>
+                  <p class="card-text">Log in page with error handling user authentication for w main users(Admin and User)</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 p-2">
+              <div class="card">
+                <a href="https://sabdmoakhar.github.io/meditation-web/"  target="_blank"> <img src="./images/mdeitation.png" alt="" class="card-img-top"></a>
+                <div class="card-body">
+                  <p><img src="./images/css.jpg" height="20px" width="20px" alt=""> <img src="./images/html5.png" alt="" width="20px" height="20px"></p>
+                  <p class="card-text">This is a project where I used only HTML and CSS to create a single responsive web page with 2 different themes</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section> <!--End of portfolio section-->
+      <hr>
+      <section id="contact">
+          <h2>Contact Me</h2>
+          <div class="container">
+            <form>
+              <div class="form-group">
+                <label for="email">Email Address:</label>
+                <input name="email-address" id="email" type="email" placeholder="You@yourEmail.com" class="form-control" required>
+              </div>
+              <div class="from-group">
+                <label for="name">Name:</label>
+                <input id="name" type="text" placeholder="Your Name" name="first-last-name" class="form-control" required >
+              </div>
+              <div class="form-group">
+              <button class="btn btn-secondary mt-2 width-20 " >Submit</button>
+              </div>
+            </form>
+          </div>
+          <div class="row contact-info">
+            <div class="col-sm-3 m-4 p-2 contact-columns">
+              <h5>Social Media</h5>
+              <div class="d-flex justify-content-center">
+                <a class="pe-2" href="https://www.linkedin.com/in/shayan-abdmoakhar1"><i class="bi bi-linkedin"></i></a>
+                <a href="https://github.com/Shayanabdmoakhar"><i class="bi bi-github"></i></a>
+              </div>
+            </div>
+            <div class="col-sm-3 m-4 p-2 contact-columns "> 
+              <h5> <i class="bi bi-envelope-fill p-2"></i>Email</h5>
+              <a href="">shayan.moakher@gmail.com</a>
+            </div>
+            <div class="col-sm-3 m-4 p-2 contact-columns">
+              <h5> <i class="bi bi-phone-fill"></i>Contact Number</h5>
+            <a href="">+17783027331</a>
+            </div>
+          </div>
+
+        <hr>
+
+
+     
+      </section>
+      <footer class="d-flex" id="footer">
+        <h5>Shayan Abdmoakhar</h5>
+        <div>
+          <a href="https://www.linkedin.com/in/shayan-abdmoakhar1" target="_blank" rel="noopener noreferrer"><i class="bi bi-linkedin p-2"></i></a>
+          <a href="https://github.com/Shayanabdmoakhar"><i class="bi bi-github"></i></a>
+        </div>
+      </footer>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous" async></script>
+    <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+<script>
+  //we call this library to prevent masonory cards being overlapped on the page load.
+  //it waits for the images to load
+  //Then initializes masonary
+  const grid = document.querySelector('.row[data-masonry]');
+  imagesLoaded(grid, function () {
+    new Masonry(grid, {
+      itemSelector: '.col-lg-4',
+      percentPosition: true
+    });
+  });
+</script>
+</body>
+</html>
+
+  </body>
+</html>
